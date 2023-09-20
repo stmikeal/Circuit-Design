@@ -1,0 +1,754 @@
+
+*** Running vivado
+    with args -log de0_cv.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source de0_cv.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source de0_cv.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 355.672 ; gain = 59.152
+Command: synth_design -top de0_cv -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18864 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 564.816 ; gain = 185.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'de0_cv' [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:2]
+INFO: [Synth 8-6157] synthesizing module 'sm_top' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'sm_debouncer' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:60]
+	Parameter SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sm_debouncer' (1#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:60]
+INFO: [Synth 8-6157] synthesizing module 'sm_debouncer__parameterized0' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:60]
+	Parameter SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sm_debouncer__parameterized0' (1#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:60]
+INFO: [Synth 8-6157] synthesizing module 'sm_debouncer__parameterized1' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:60]
+	Parameter SIZE bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sm_debouncer__parameterized1' (1#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:60]
+INFO: [Synth 8-6157] synthesizing module 'sm_clk_divider' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:79]
+	Parameter shift bound to: 16 - type: integer 
+	Parameter bypass bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sm_register_we' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_register.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'sm_register_we' (2#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_register.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'sm_clk_divider' (3#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:79]
+INFO: [Synth 8-6157] synthesizing module 'sm_rom' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:11]
+	Parameter SIZE bound to: 64 - type: integer 
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'program.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:23]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+WARNING: [Synth 8-3848] Net rom in module/entity sm_rom does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'sm_rom' (4#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_rom.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sr_cpu' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:13]
+INFO: [Synth 8-6157] synthesizing module 'sm_register' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_register.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sm_register' (5#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_register.v:11]
+INFO: [Synth 8-6157] synthesizing module 'sr_decode' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'sr_decode' (6#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:140]
+INFO: [Synth 8-6157] synthesizing module 'func' [C:/Data/Labs/SchemaTech/schoolRISCV/src/func.v:3]
+	Parameter START bound to: 3'b000 
+	Parameter MUL2 bound to: 3'b001 
+	Parameter CNTB bound to: 3'b010 
+	Parameter LOOP bound to: 3'b011 
+	Parameter CNT3A bound to: 3'b100 
+	Parameter RESULT bound to: 3'b101 
+INFO: [Synth 8-6157] synthesizing module 'mult' [C:/Data/Labs/SchemaTech/schoolRISCV/src/mult.v:2]
+WARNING: [Synth 8-6014] Unused sequential element a_in_reg was removed.  [C:/Data/Labs/SchemaTech/schoolRISCV/src/mult.v:22]
+WARNING: [Synth 8-6014] Unused sequential element b_in_reg was removed.  [C:/Data/Labs/SchemaTech/schoolRISCV/src/mult.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult' (7#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/mult.v:2]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Data/Labs/SchemaTech/schoolRISCV/src/adder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (8#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/adder.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shift' [C:/Data/Labs/SchemaTech/schoolRISCV/src/shift.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'shift' (9#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/shift.v:2]
+WARNING: [Synth 8-689] width (10) of port connection 'in' does not match port width (8) of module 'shift' [C:/Data/Labs/SchemaTech/schoolRISCV/src/func.v:80]
+INFO: [Synth 8-251] x lol [C:/Data/Labs/SchemaTech/schoolRISCV/src/func.v:235]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data/Labs/SchemaTech/schoolRISCV/src/func.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'func' (10#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/func.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sm_register_file' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:260]
+INFO: [Synth 8-6155] done synthesizing module 'sm_register_file' (11#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:260]
+INFO: [Synth 8-6157] synthesizing module 'sr_alu' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:236]
+INFO: [Synth 8-6155] done synthesizing module 'sr_alu' (12#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:236]
+INFO: [Synth 8-6157] synthesizing module 'sr_control' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:215]
+INFO: [Synth 8-6155] done synthesizing module 'sr_control' (13#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:183]
+INFO: [Synth 8-6155] done synthesizing module 'sr_cpu' (14#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sr_cpu.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'sm_top' (15#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'sm_hex_display' [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_hex_display.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sm_hex_display' (16#1) [C:/Data/Labs/SchemaTech/schoolRISCV/src/sm_hex_display.v:11]
+WARNING: [Synth 8-3848] Net DRAM_ADDR in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:23]
+WARNING: [Synth 8-3848] Net DRAM_BA in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:24]
+WARNING: [Synth 8-3848] Net DRAM_CAS_N in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:25]
+WARNING: [Synth 8-3848] Net DRAM_CKE in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:26]
+WARNING: [Synth 8-3848] Net DRAM_CLK in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:27]
+WARNING: [Synth 8-3848] Net DRAM_CS_N in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:28]
+WARNING: [Synth 8-3848] Net DRAM_LDQM in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:30]
+WARNING: [Synth 8-3848] Net DRAM_RAS_N in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:31]
+WARNING: [Synth 8-3848] Net DRAM_UDQM in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:32]
+WARNING: [Synth 8-3848] Net DRAM_WE_N in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:33]
+WARNING: [Synth 8-3848] Net VGA_B in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:35]
+WARNING: [Synth 8-3848] Net VGA_G in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:36]
+WARNING: [Synth 8-3848] Net VGA_HS in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:37]
+WARNING: [Synth 8-3848] Net VGA_R in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:38]
+WARNING: [Synth 8-3848] Net VGA_VS in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:39]
+WARNING: [Synth 8-3848] Net SD_CLK in module/entity de0_cv does not have driver. [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'de0_cv' (17#1) [C:/Data/Labs/SchemaTech/schoolRISCV/board/de0_cv/de0_cv.v:2]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[31]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[30]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[29]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[28]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[27]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[26]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[25]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[24]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[23]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[22]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[21]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[20]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[19]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[18]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[17]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[16]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[15]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[14]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[13]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[12]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[11]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[10]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[9]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[8]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[7]
+WARNING: [Synth 8-3331] design sm_rom has unconnected port a[6]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[12]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[11]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[10]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[9]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[8]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[7]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[6]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[5]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[4]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[3]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[2]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[1]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_ADDR[0]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_BA[1]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_BA[0]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_CAS_N
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_CKE
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_CLK
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_CS_N
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_LDQM
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_RAS_N
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_UDQM
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_WE_N
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_B[3]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_B[2]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_B[1]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_B[0]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_G[3]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_G[2]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_G[1]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_G[0]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_HS
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_R[3]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_R[2]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_R[1]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_R[0]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port VGA_VS
+WARNING: [Synth 8-3331] design de0_cv has unconnected port SD_CLK
+WARNING: [Synth 8-3331] design de0_cv has unconnected port CLOCK4_50
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[15]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[14]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[13]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[12]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[11]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[10]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[9]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[8]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[7]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[6]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[5]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[4]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[3]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[2]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[1]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port DRAM_DQ[0]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port PS2_CLK
+WARNING: [Synth 8-3331] design de0_cv has unconnected port PS2_CLK2
+WARNING: [Synth 8-3331] design de0_cv has unconnected port PS2_DAT
+WARNING: [Synth 8-3331] design de0_cv has unconnected port PS2_DAT2
+WARNING: [Synth 8-3331] design de0_cv has unconnected port SD_CMD
+WARNING: [Synth 8-3331] design de0_cv has unconnected port SD_DATA[3]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port SD_DATA[2]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port SD_DATA[1]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port SD_DATA[0]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[35]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[34]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[33]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[32]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[31]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[30]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[29]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[28]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[27]
+WARNING: [Synth 8-3331] design de0_cv has unconnected port GPIO_0[26]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 628.590 ; gain = 249.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 628.590 ; gain = 249.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 628.590 ; gain = 249.070
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Data/Labs/SchemaTech/schoolRISCV/src/adder.v:11]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'func'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   START |                              000 |                              000
+                    MUL2 |                              001 |                              001
+                    CNTB |                              010 |                              010
+                    LOOP |                              011 |                              011
+                   CNT3A |                              100 |                              100
+                  RESULT |                              101 |                              101
+                  iSTATE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'func'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 628.590 ; gain = 249.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     10 Bit        Muxes := 5     
+	   7 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 1     
+	   7 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 3     
+	   7 Input      6 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 45    
+	   3 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 15    
+	  12 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sm_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+Module sm_debouncer__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module sm_debouncer__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 2     
+Module sm_register_we 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module sm_clk_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module sm_register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mult 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module shift 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module func 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   7 Input     10 Bit        Muxes := 3     
+	   7 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 3     
+	   7 Input      6 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 37    
+	   3 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 15    
+Module sm_register_file 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module sr_alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+Module sr_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input      3 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 8     
+Module sr_cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_1_reg[3] )
+INFO: [Synth 8-3886] merging instance 'sm_top/sm_cpu/math_block/a_mul_1_reg[4]' (FDE) to 'sm_top/sm_cpu/math_block/a_mul_1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sm_top/sm_cpu/math_block/a_mul_1_reg[5]' (FDE) to 'sm_top/sm_cpu/math_block/a_mul_1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sm_top/sm_cpu/math_block/a_mul_1_reg[6]' (FDE) to 'sm_top/sm_cpu/math_block/a_mul_1_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_2_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_2_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_2_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_mul_2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_2_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_2_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_2_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_mul_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/rst_mul_2_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/rst_mul_1_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/B_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/Y_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/B_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/Y_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/Y_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/Y_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/B_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/B_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/B_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/B_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/B_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/B_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/B_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/X_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/S_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/S_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/S_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/S_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/S_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/S_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_adder_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_adder_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_adder_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_adder_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_adder_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_adder_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_adder_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/b_adder_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/sub_adder_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/a_adder_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/FSM_sequential_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/load_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/load_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/load_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/FSM_sequential_state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/FSM_sequential_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/res_inner_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm_top/sm_cpu/math_block/busy_inner_reg )
+WARNING: [Synth 8-3332] Sequential element (sm_top/sm_cpu/math_block/FSM_sequential_state_reg[2]) is unused and will be removed from module de0_cv.
+WARNING: [Synth 8-3332] Sequential element (sm_top/sm_cpu/math_block/FSM_sequential_state_reg[1]) is unused and will be removed from module de0_cv.
+WARNING: [Synth 8-3332] Sequential element (sm_top/sm_cpu/math_block/FSM_sequential_state_reg[0]) is unused and will be removed from module de0_cv.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_6/\sm_top/sm_cpu/r_pc/q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_6/\sm_top/sm_cpu/r_pc/q_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 807.250 ; gain = 427.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------------+-----------+----------------------+---------------+
+|de0_cv      | sm_top/sm_cpu/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18   | 
++------------+-------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 809.066 ; gain = 429.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------------+-----------+----------------------+---------------+
+|de0_cv      | sm_top/sm_cpu/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18   | 
++------------+-------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 809.066 ; gain = 429.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 809.070 ; gain = 429.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 809.070 ; gain = 429.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 809.070 ; gain = 429.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 809.070 ; gain = 429.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 809.070 ; gain = 429.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 809.070 ; gain = 429.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    14|
+|3     |LUT1   |     2|
+|4     |LUT2   |     2|
+|5     |LUT3   |    18|
+|6     |LUT5   |     2|
+|7     |LUT6   |    48|
+|8     |RAM32M |     1|
+|9     |FDCE   |    54|
+|10    |FDRE   |    25|
+|11    |IBUF   |    14|
+|12    |OBUF   |    52|
+|13    |OBUFT  |    38|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------------------------+------+
+|      |Instance           |Module                       |Cells |
++------+-------------------+-----------------------------+------+
+|1     |top                |                             |   271|
+|2     |  sm_top           |sm_top                       |   166|
+|3     |    f0             |sm_debouncer                 |     8|
+|4     |    f1             |sm_debouncer__parameterized0 |     3|
+|5     |    f2             |sm_debouncer__parameterized1 |    18|
+|6     |    sm_clk_divider |sm_clk_divider               |    47|
+|7     |      r_cntr       |sm_register_we               |    47|
+|8     |    sm_cpu         |sr_cpu                       |    90|
+|9     |      r_pc         |sm_register                  |    82|
+|10    |      rf           |sm_register_file             |     8|
++------+-------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 809.070 ; gain = 429.551
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 418 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 809.070 ; gain = 429.551
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 809.070 ; gain = 429.551
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 905.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+151 Infos, 186 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 905.871 ; gain = 550.199
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 905.871 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Data/Labs/SchemaTech/lab4/lab4.runs/synth_1/de0_cv.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file de0_cv_utilization_synth.rpt -pb de0_cv_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 10 12:36:55 2023...

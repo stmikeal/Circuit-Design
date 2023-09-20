@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun 10 12:35:56 2023
+# Process ID: 12180
+# Current directory: C:/Data/Labs/SchemaTech/lab4/lab4.runs/synth_1
+# Command line: vivado.exe -log de0_cv.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source de0_cv.tcl
+# Log file: C:/Data/Labs/SchemaTech/lab4/lab4.runs/synth_1/de0_cv.vds
+# Journal file: C:/Data/Labs/SchemaTech/lab4/lab4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source de0_cv.tcl -notrace

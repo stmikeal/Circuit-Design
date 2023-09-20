@@ -1,0 +1,11 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+The adder output is correct!!! y=0, s_0=0, s_1=0, z_out_0=0, z_out_1=0, z_out_2=0, z_out_3=0
+The adder output is correct!!! y=0, s_0=0, s_1=1, z_out_0=0, z_out_1=0, z_out_2=0, z_out_3=0
+The adder output is correct!!! y=0, s_0=1, s_1=0, z_out_0=0, z_out_1=0, z_out_2=0, z_out_3=0
+The adder output is correct!!! y=0, s_0=1, s_1=1, z_out_0=0, z_out_1=0, z_out_2=0, z_out_3=0
+The adder output is correct!!! y=1, s_0=0, s_1=0, z_out_0=1, z_out_1=0, z_out_2=0, z_out_3=0
+The adder output is correct!!! y=1, s_0=0, s_1=1, z_out_0=0, z_out_1=1, z_out_2=0, z_out_3=0
+The adder output is correct!!! y=1, s_0=1, s_1=0, z_out_0=0, z_out_1=0, z_out_2=1, z_out_3=0
+The adder output is correct!!! y=1, s_0=1, s_1=1, z_out_0=0, z_out_1=0, z_out_2=0, z_out_3=1
+$stop called at time : 90 ns : File "C:/Data/Labs/SchemaTech/lab_1/lab_1.srcs/sources_1/new/demux_test.v" Line 39
